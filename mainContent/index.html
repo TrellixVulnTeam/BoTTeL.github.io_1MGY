@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="This is an awesome web browser" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Carpenters</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+      <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+          <ul class="navigation__navlist">
+              <li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Strona główna</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>O nas</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Galeria</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Kontakt</a></li>
+              </ul>
+      </nav>
+  </div>
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="../img/maleLogo.JPG" alt="logo" class="header__logo">
+      </div>
+
+      <div class="header__text-box">
+        <h1 class="heading-primary-text">
+            <span class="heading-primary-text--main">Carpenters</span>
+            <span class="heading-primary-text--sub">Miejsce gdzie spełniamy drewniane marzenia </span>
+        </h1> 
+
+      </div>
+
+    </header>
+
+
+  <main>
+    
+    <div class="firstContent" id="cos">
+      <p>
+        O NAS<br /><br />
+        Nasza firma specjalizuje się w produkcji wyrobów z litego drewna, ale 
+        również z lakierowanego MDF-u oraz płyt meblowych. Projektujemy i wykonujemy 
+        meble dla domu, dla biura, kuchnie, drzwi, schody, meble ogrodowe, altany 
+        oraz zadaszenia. Do produkcji swoich wyrobów zawsze wykorzystujemy materiały 
+        i akcesoria najwyższej jakości. Dzięki połączeniu piękna litego drewna i 
+        nowoczesnego stylu powstają jedyne w swoim rodzaju produkty nadające wnętrzu 
+        niepowtarzalny charakter.
+      </p>
+    </div>
+
+    <div class="aboutUs" id="oNas">
+      <img class="pictureAboutUs" src="../img/schody1.jpg" alt="zdjęcie" />
+
+      <p>
+        Celem naszej firmy jest zadowolenie klienta. Zajmujemy się 
+        głównie kompleksową produkcją oraz montażem schodów z litego drewna.
+        Dla naszych klientów zawsze przygotowujemy darmową wycenę naszej usługi.
+
+      </p>
+      
+    </div>
+    <div class="aboutUs-sub">
+      
+
+      <p>     
+        Szukasz inspiracji? Zapraszamy do obejrzenia naszej galerii gdzie znajdują 
+        się niektóre z naszych realizacji oraz na naszego facebooka, gdzie co 
+        jakiś czas dodajemy nowe dzieła naszej pracy.
+      </p>
+      <img class="pictureAboutUs" src="../Schody/stairs_ash.jpg" alt="zdjęcie" />
+
+      <!--
+ 
+      <ol>
+        Chcesz zamówić u nas schody lub inny produkt z litego drewna?
+        Zamówienia w naszej firmie wyglądają następująco:<br><br>
+        
+        <li> Dzwonisz lub piszesz maila z opisem swojego zamówienia (napisz co chciałbyś zamówić, prześlij poglądowe zdjęcie lub własny projekt, podaj wstępne wymiary, opisz najlepiej 
+        jak potrafisz swój produkt)</li>
+        <li> na podstawie Twojego opisu przugotujemy wstępną wycenę i wyślemy ją na Twojego maila</li>
+        <li> jeśli nasza oferta Ci odpowiada, przyjeżdżamy na dokładny pomiar oraz omówienie szczegółów zamówienia</li>
+        <li> ustalamy termin montażu </li>
+        <li> przyjeżdzamy i montujemy schody lub inny produkt zrealizowany według Twojego zamówienia</li>
+
+      </ol>
+      -->
+     
+    </div>
+
+    <div class="imageContainerGallery" id="gallery">
+      <img src="../img/c.JPG" alt="kitchenPicture" />
+      <button id="galleryButton">Galeria moich prac</button>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="divFooter">
+      <p>Zapraszamy Państwa do kontaktu:</p>
+      
+      <ul class="footerUL">
+        <li>Telefon: +48 790 346 679</li>
+        <li>E-mail: carpentersbiuro@gmail.com</li>
+        <li>43-200 Pszczyna</li>
+        <li>
+          <a href="https://facebook.com/carpentersmeble" class="fab fa-facebook">
+            Carpenters</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+</body>
+
+<script>
+  $(document).ready(function () {
+    var $menu = $("#menu"),
+      $menulink = $(".menu-link");
+
+    $menulink.click(function () {
+      $menulink.toggleClass("open");
+      $menu.toggleClass("open");
+      return false;
+    });
+  });
+
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var cokolwiek;
+    var x = document.getElementsByClassName("slideImages");
+    for (cokolwiek = 0; cokolwiek < x.length; cokolwiek++) {
+      x[cokolwiek].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {
+      myIndex = 1;
+    }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+  }
+
+  document.getElementById("galleryButton").onclick = function () {
+    location.href = "gallery.html";
+  };
+</script>
+
+</html>

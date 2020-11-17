@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+  <title>Carpenters</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <meta name="description" content="This is an awesome web browser" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="gallerystyle.css" />
+</head>
+
+<body>
+  <div class="header">
+    <header>
+      <img class="smallLogo" src="maleLogo.JPG" alt="smallLogoPicture" />
+
+      <nav id="menu" role="navigation">
+        <ul>
+          <li><a href="index.html">STRONA GŁÓWNA</a></li>
+          <li><a href="#oNas">O NAS</a></li>
+          <li><a href="gallery.html">GALERIA</a></li>
+          <li><a href="#footer">KONTAKT</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-link">
+        <div class="icon"></div>
+      </div>
+    </header>
+  </div>
+
+  <section class="imagesContainer">
+
+    <a href="deepGallery.html">
+      <h2>Kuchnie</h2>
+      <img class="selectImage" src="/balustrada1.jpg" alt />
+    </a>
+
+    <div>
+      <a href="deepGallery.html">
+        <h2>Schody</h2>
+        <img class="selectImage" src="/2.png" alt />
+
+      </a>
+    </div>
+    <div>
+      <a href="deepGallery.html">
+        <h2>Szafki</h2>
+        <img class="selectImage" src="/3.JPG" alt />
+
+      </a>
+    </div>
+    <div>
+      <a href="deepGallery.html">
+        <h2 class="lastImageUnderDescription">Stoły</h2>
+        <img class="selectImage" src="/4.jpg" alt />
+
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="divFooter">
+      <p>Zapraszamy Państwa do kontaktu:</p>
+      <br />
+      <ul class="footerUL">
+        <li><a href="">Telefon: +48 790 346 679</a></li>
+        <li><a href="">E-mail: carpentersbiuro@gmail.com</a></li>
+        <li><a href="">43-200 Pszczyna</a></li>
+        <li>
+          <a href="https://facebook.com/carpentersmeble" class="fab fa-facebook">
+            Carpenters</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+<script>
+  $(document).ready(function () {
+    var $menu = $("#menu"),
+      $menulink = $(".menu-link");
+
+    $menulink.click(function () {
+      $menulink.toggleClass("open");
+      $menu.toggleClass("open");
+      return false;
+    });
+  });
+</script>
+
+</html>
