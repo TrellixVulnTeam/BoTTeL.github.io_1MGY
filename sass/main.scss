@@ -66,12 +66,19 @@ html {
     html {
         font-size: 65%;
     }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 @media only screen and(min-width:1200px) {
     html {
         font-size: 80%;
     }
+
 }
 
 body {
@@ -373,6 +380,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.aboutUs__picture {
+    width: 95%;
 }
 
 .aboutUs-sub {
