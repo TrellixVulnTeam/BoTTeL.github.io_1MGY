@@ -350,10 +350,10 @@ main {
   margin-top: 1em; }
 
 .togallery__image {
-  width: 95%;
-  max-height: 60vh;
+  max-height: 70vh;
   clip-path: circle();
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  object-fit: cover; }
 
 .togallery__button {
   display: flex;
@@ -374,7 +374,7 @@ main {
   text-decoration: none;
   transition: 0.3s ease; }
   .togallery__button:hover {
-    transform: scale(1.5, 1.5);
+    transform: scale(1.2, 1.2);
     color: black; }
 
 .footer {
