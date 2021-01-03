@@ -30,8 +30,8 @@
       <nav class="navigation__nav">
           <ul class="navigation__navlist">
               <li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Strona główna</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>  O nas </a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Galeria</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>  O nas  </a></li>
+              <li class="navigation__item"><a href="gallerySite/gallery.html" class="navigation__link"><span>03</span>Galeria</a></li>
               <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Kontakt</a></li>
               </ul>
       </nav>
@@ -67,8 +67,9 @@
     </div>
 
     <div class="aboutUs" >
+      
       <img class="aboutUs__picture" src="../img/schody1.jpg" alt="Zdjęcie schodów" />
-
+    
       <p>
         Celem naszej firmy jest zadowolenie klienta. Zajmujemy się 
         głównie kompleksową produkcją oraz montażem schodów z litego drewna.
@@ -84,7 +85,7 @@
         się niektóre z naszych realizacji oraz na naszego facebooka, gdzie co 
         jakiś czas dodajemy nowe dzieła naszej pracy.
       </p>
-      <img class="pictureAboutUs" src="../Schody/stairs_ash.jpg" alt="zdjęcie" />
+      <img class="aboutUs-sub__picture" src="../Schody/stairs_ash.jpg" alt="zdjęcie" />
 
       <!--
  
@@ -104,26 +105,22 @@
      
     </div>
 
-    <div class="imageContainerGallery" id="gallery">
-      <img src="../img/c.JPG" alt="kitchenPicture" />
-      <button id="galleryButton">Galeria moich prac</button>
+    <div class="togallery" id="gallery">
+      <img  class ="togallery__image" src="../img/c.JPG" alt="kitchenPicture" />
+      <a class="togallery__button" href="gallerySite/gallery.html">Galeria moich prac</a>
     </div>
   </main>
 
   <footer class="footer" id="footer">
-    <div class="divFooter">
       <p>Zapraszamy Państwa do kontaktu:</p>
-      
-      <ul class="footerUL">
-        <li>Telefon: +48 790 346 679</li>
-        <li>E-mail: carpentersbiuro@gmail.com</li>
-        <li>43-200 Pszczyna</li>
-        <li>
+        <p>Telefon: +48 790 346 679</p>
+        <p>E-mail: carpentersbiuro@gmail.com</p>
+        <p>43-200 Pszczyna</p>
+        <p>
           <a href="https://facebook.com/carpentersmeble" class="fab fa-facebook">
             Carpenters</a>
-        </li>
+          </p>
       </ul>
-    </div>
   </footer>
 </div>
 </body>
@@ -140,26 +137,6 @@
     });
   });
 
-  var myIndex = 0;
-  carousel();
-
-  function carousel() {
-    var cokolwiek;
-    var x = document.getElementsByClassName("slideImages");
-    for (cokolwiek = 0; cokolwiek < x.length; cokolwiek++) {
-      x[cokolwiek].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {
-      myIndex = 1;
-    }
-    x[myIndex - 1].style.display = "block";
-    setTimeout(carousel, 3000); // Change image every 3 seconds
-  }
-
-  document.getElementById("galleryButton").onclick = function () {
-    location.href = "gallery.html";
-  };
 </script>
 
 </html>

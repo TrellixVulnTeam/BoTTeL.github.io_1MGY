@@ -38,19 +38,17 @@
 
 html {
   font-size: 45%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  max-width: 192rem;
+  max-height: 120rem; }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 550px) {
   html {
     font-size: 55%; } }
 
 @media only screen and (min-width: 900px) {
   html {
-    font-size: 65%; }
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; } }
+    font-size: 65%; } }
 
 @media only screen and (min-width: 1200px) {
   html {
@@ -263,17 +261,6 @@ main {
   display: flex;
   flex-direction: column; }
 
-.slideShowContainer {
-  display: flex;
-  /* position: relative; */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.slideImages {
-  display: none;
-  width: 95%; }
-
 .companyDescription {
   display: flex;
   flex-direction: column;
@@ -300,11 +287,26 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-color: red; }
+  align-items: center; }
 
 .aboutUs__picture {
-  width: 95%; }
+  width: 95%;
+  max-height: 80vh; }
+
+@media only screen and (min-width: 450px) {
+  .companyDescription__text--sub {
+    margin-bottom: 2rem; }
+  .aboutUs {
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between; }
+    .aboutUs__picture {
+      margin-left: 1rem;
+      width: 50%; }
+    .aboutUs p {
+      width: 30%;
+      margin-right: 1rem;
+      margin-left: 4rem; } }
 
 .aboutUs-sub {
   display: flex;
@@ -312,7 +314,7 @@ main {
   justify-content: center;
   align-items: center; }
 
-.pictureAboutUs {
+.aboutUs-sub__picture {
   width: 95%;
   margin-top: 1em; }
 
@@ -326,40 +328,54 @@ main {
   font-size: var(--fs-h3);
   text-transform: uppercase; }
 
-.mySlidesFade {
-  display: none; }
+@media only screen and (min-width: 450px) {
+  .aboutUs-sub {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 2rem; }
+    .aboutUs-sub__picture {
+      left: 0;
+      width: 50%; }
+    .aboutUs-sub p {
+      margin-right: 1rem;
+      margin-left: 1rem;
+      width: 40%; } }
 
-.imageContainerGallery {
+.togallery {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1em; }
 
-.imageContainerGallery img {
-  width: 95%; }
+.togallery__image {
+  width: 95%;
+  max-height: 60vh;
+  clip-path: circle();
+  margin-top: 2rem; }
 
-#galleryButton {
+.togallery__button {
   display: flex;
   position: absolute;
   justify-content: center;
   align-self: center;
   height: 5vh;
-  width: 200px;
-  color: black;
+  width: 25rem;
   text-transform: uppercase;
   padding: 1em;
   line-height: 0.5em;
-  text-align: center;
   font-family: var(--ff-primary);
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 2rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 10%; }
-
-#galleryButton:hover {
-  background-color: cadetblue; }
+  border-radius: 10%;
+  text-decoration: none;
+  transition: 0.3s ease; }
+  .togallery__button:hover {
+    transform: scale(1.5, 1.5);
+    color: black; }
 
 .footer {
   display: flex;
@@ -369,30 +385,32 @@ main {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../Schody/balustrada.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 95%;
+  height: 15rem;
   position: relative;
   bottom: 0;
   left: 0;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem; }
+  margin-top: 2rem; }
+  .footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 1.1;
+    top: 1rem;
+    text-transform: uppercase; }
+  .footer a {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    color: white; }
 
-.footer p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.5rem;
-  letter-spacing: 1.1;
-  top: 10px; }
-
-.footer li,
-.footer a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 0.5em;
-  color: white;
-  font-size: 1rem; }
-
-.footer a {
-  display: block; }
+@media only screen and (min-width: 430px) {
+  .footer {
+    height: 20rem; }
+    .footer p {
+      font-size: 2rem; }
+    .footer a {
+      font-size: 2rem; }
+    .footer p:nth-child(1) {
+      font-size: 2.5rem; } }
