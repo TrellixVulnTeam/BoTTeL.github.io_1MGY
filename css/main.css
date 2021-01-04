@@ -60,10 +60,6 @@ body {
   line-height: 1.6;
   font-weight: 400; }
 
-.container {
-  display: flex;
-  flex-direction: column; }
-
 .navigation__checkbox {
   display: none; }
 
@@ -256,6 +252,10 @@ body {
   width: 100%;
   justify-content: space-between;
   align-self: space-between; }
+
+.container {
+  display: flex;
+  flex-direction: column; }
 
 main {
   display: flex;
