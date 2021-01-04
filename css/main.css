@@ -251,10 +251,6 @@ body {
   justify-content: space-between;
   align-self: space-between; }
 
-main {
-  display: flex;
-  flex-direction: column; }
-
 .companyDescription {
   display: flex;
   flex-direction: column;
