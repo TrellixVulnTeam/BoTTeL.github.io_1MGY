@@ -253,10 +253,6 @@ body {
   justify-content: space-between;
   align-self: space-between; }
 
-.container {
-  display: flex;
-  flex-direction: column; }
-
 main {
   display: flex;
   flex-direction: column; }
