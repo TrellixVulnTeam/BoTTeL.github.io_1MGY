@@ -465,11 +465,11 @@ main {
     display: flex;
     position: absolute;
     justify-content: center;
-    align-self: center;
+    text-align: center;
     height: 5vh;
     width: 25rem;
     text-transform: uppercase;
-    padding: 1em;
+    padding: 1.25rem;
     line-height: 0.5em;
     font-family: var(--ff-primary);
     font-weight: 300;
