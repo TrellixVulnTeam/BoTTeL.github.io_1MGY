@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="This is an awesome web browser" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/gallerysite.css" />
+    <title>Carpenters</title>
+  </head>
+
+  <body>
+    <div class="container">
+  
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+  
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+  
+        <div class="navigation__background">&nbsp;</div>
+  
+        <nav class="navigation__nav">
+            <ul class="navigation__navlist">
+                <li class="navigation__item"><a href="index.html" class="navigation__link"><span>01</span>Strona główna</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>  O nas  </a></li>
+                <li class="navigation__item"><a href="gallerySite/gallery.html" class="navigation__link"><span>03</span>Galeria</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Kontakt</a></li>
+                </ul>
+        </nav>
+    </div>
+      <header class="header">
+        <div class="header__logo-box">
+          <img src="../img/maleLogo.JPG" alt="logo" class="header__logo">
+        </div>
+  
+        <div class="header__text-box">
+          <h1 class="heading-primary-text">
+              <span class="heading-primary-text--main">Carpenters</span>
+              <span class="heading-primary-text--sub">Pasja do drewna </span>
+          </h1> 
+  
+        </div>
+
+      </header>
+
+  
+    <div class="gallery">
+      <img src="img/kuchniaCzarna.png" alt="imageFirst" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageSecond" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageThird" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageFourth" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageFifth" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageSixth" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageSeventh" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageEigth" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageNinth" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageTenth" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageEleventh" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageTwelfth" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageThirteenth" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageFourteenth" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageFifteenth" class="gallery__image">
+      <img src="img/kuchniaCzarna.png" alt="imageSixteenth" class="gallery__image">
+    </div>
+
+
+    <footer class="footer" id="footer">
+        <p>Zapraszamy Państwa do kontaktu:</p>
+          <p>Telefon: +48 790 346 679</p>
+          <p>E-mail: carpentersbiuro@gmail.com</p>
+          <p>43-200 Pszczyna</p>
+          <p>
+            <a href="https://facebook.com/carpentersmeble" class="fab fa-facebook">
+              Carpenters</a>
+            </p>
+        </ul>
+    </footer>
+  </div>
+  </body>
+  
+  <script>
+    $(document).ready(function () {
+      var $menu = $("#menu"),
+        $menulink = $(".menu-link");
+  
+      $menulink.click(function () {
+        $menulink.toggleClass("open");
+        $menu.toggleClass("open");
+        return false;
+      });
+    });
+  
+  </script>
+  
+  </html>
