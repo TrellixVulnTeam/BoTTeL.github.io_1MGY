@@ -102,7 +102,7 @@ body {
     cursor: pointer;
 }
 
-/*
+
 @media only screen and (max-width: 56.25em) {
     .navigation__button {
         top: 4rem;
@@ -116,7 +116,7 @@ body {
         right: 2rem;
     }
 }
-*/
+
 
 .navigation__background {
     height: 6rem;
@@ -131,7 +131,7 @@ body {
     overflow: hidden;
 }
 
-/*
+
 @media only screen and (max-width: 56.25em) {
     .navigation__background {
         top: 4.5rem;
@@ -145,7 +145,7 @@ body {
         right: 2.5rem;
     }
 }
-*/
+
 .navigation__nav {
     height: 100vh;
     position: fixed;
@@ -260,7 +260,8 @@ body {
 }
 
 .header {
-    height: 95vh;
+    height: 75vh;
+    object-fit: scale-down;
     background-image: linear-gradient(to right bottom,
             rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.8)),
@@ -450,9 +451,8 @@ main {
 }
 
 .togallery__image {
-
-    max-height: 40vh;
-    clip-path: circle();
+    width: 95%;
+    max-height: 70vh;
     margin-top: 2rem;
     object-fit: cover;
 
@@ -496,10 +496,10 @@ main {
     background-repeat: no-repeat;
     //background-size: 95%;
     height: 15rem;
-    //position: relative;
+    position: relative;
     bottom: 0;
     left: 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
     object-fit: cover;
 
     & p {

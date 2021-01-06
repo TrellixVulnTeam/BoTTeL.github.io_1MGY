@@ -76,21 +76,16 @@ body {
   text-align: center;
   cursor: pointer; }
 
-/*
 @media only screen and (max-width: 56.25em) {
-    .navigation__button {
-        top: 4rem;
-        right: 4rem;
-    }
-}
+  .navigation__button {
+    top: 4rem;
+    right: 4rem; } }
 
 @media only screen and (max-width: 37.5em) {
-    .navigation__button {
-        top: 2rem;
-        right: 2rem;
-    }
-}
-*/
+  .navigation__button {
+    top: 2rem;
+    right: 2rem; } }
+
 .navigation__background {
   height: 6rem;
   width: 6rem;
@@ -103,21 +98,16 @@ body {
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   overflow: hidden; }
 
-/*
 @media only screen and (max-width: 56.25em) {
-    .navigation__background {
-        top: 4.5rem;
-        right: 4.5rem;
-    }
-}
+  .navigation__background {
+    top: 4.5rem;
+    right: 4.5rem; } }
 
 @media only screen and (max-width: 37.5em) {
-    .navigation__background {
-        top: 2.5rem;
-        right: 2.5rem;
-    }
-}
-*/
+  .navigation__background {
+    top: 2.5rem;
+    right: 2.5rem; } }
+
 .navigation__nav {
   height: 100vh;
   position: fixed;
@@ -214,7 +204,8 @@ body {
   transform: rotate(-135deg); }
 
 .header {
-  height: 95vh;
+  height: 75vh;
+  object-fit: scale-down;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/drewnoPrzerobione.jpg");
   background-size: cover;
   background-position: top;
@@ -349,8 +340,8 @@ main {
   margin-top: 1em; }
 
 .togallery__image {
-  max-height: 40vh;
-  clip-path: circle();
+  width: 95%;
+  max-height: 70vh;
   margin-top: 2rem;
   object-fit: cover; }
 
@@ -385,9 +376,10 @@ main {
   background-position: center center;
   background-repeat: no-repeat;
   height: 15rem;
+  position: relative;
   bottom: 0;
   left: 0;
-  margin-top: 2rem;
+  margin-top: 1rem;
   object-fit: cover; }
   .footer p {
     display: flex;
