@@ -260,6 +260,12 @@ body {
     height: 30rem;
     object-fit: cover;
     margin: 1rem; }
+    .gallery__image:hover {
+      animation: scale 0.5s ease-in forwards; }
+
+@keyframes scale {
+  100% {
+    transform: scale(1.1); } }
 
 .footer {
   display: flex;
